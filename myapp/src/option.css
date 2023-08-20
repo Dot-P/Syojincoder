@@ -1,0 +1,140 @@
+.home-container, .container {
+  margin: 10px;
+  margin-bottom: 0px;
+  padding: 0;
+  height: 98vh; /* 画面全体の高さ */
+  width: 98vw; /* 画面全体の幅 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020; /* 黒い背景 */
+  border-radius: 20px; /* 角を丸く */
+  overflow: hidden; /* スクロールバーを隠す */
+}
+
+.home-container .content {
+  width: 85%; /* 白い部分の幅 */
+  height: 95%; /* 白い部分の高さ */
+  background-color: #fafaf8; /* 白い背景 */
+  border-radius: 20px; /* 角を丸く */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 左寄りに配置 */
+  margin-left: 10%; /* 左のマージンを追加 */
+}
+
+.material-icons {
+  color: #fff;
+  margin-top: 70px;
+  margin-right: -40px;
+  margin-left: 20px;
+  font-size: 35px; /* 通常時のサイズ */
+  transition: transform 0.3s ease; /* 拡大縮小のアニメーション */
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.material-icons:hover {
+  transform: scale(1.15); /* ホバー時に15%拡大 */
+}
+
+.home-icon {
+  border-left: 2px solid white; /* 左側の境界線を設定 */
+  padding-left: 5px; /* 余白を追加してアイコンと境界線の間を空ける */
+}
+
+.container123 {
+  padding-right: 175px;
+  font-family: Arial, sans-serif;
+  background-color: #fafaf8; /* Light background color */
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding-left: 50px;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px; /* Soft rounded corners */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.option:hover {
+  background-color: #f0f0f0; /* Light hover effect */
+}
+
+.option label {
+  margin-left: 10px;
+  font-size: 18px; /* Larger font for readability */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.change {
+  padding: 12px 20px; /* Larger padding for a bigger button */
+  margin-bottom: 5px;
+  margin-left: 90%;
+  font-size: 18px; /* Larger font size */
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+  
+}
+
+.change:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Hover時に少し拡大 */
+}
+
+.change:active {
+  background-color: #004a99;
+  transform: scale(1); /* 押されたときに元のサイズに戻る */
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-between; /* セクション間の間隔を開ける */
+}
+
+.section {
+  width: 49%; /* セクションの幅を設定 */
+  padding: 20px;
+  box-sizing: border-box; /* パディングとボーダーを幅に含める */
+  border-right: 1px solid #ccc; /* 真ん中の線 */
+}
+
+.section:last-child {
+  border-right: none; /* 最後のセクションには右の境界線を追加しない */
+}
+
+.toggle-container {
+  display: flex;
+}
+
+.toggle-option {
+  display: flex;
+  justify-content: space-between; /* 左右の間隔を開ける */
+  align-items: center;
+  margin-bottom: 15px; /* 下のマージンを追加 */
+  margin-right: 30px;
+}
+

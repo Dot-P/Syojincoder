@@ -1,0 +1,95 @@
+
+.home-container, .container {
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 0;
+    height: 98vh; /* 画面全体の高さ */
+    width: 98vw; /* 画面全体の幅 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020; /* 黒い背景 */
+    border-radius: 20px; /* 角を丸く */
+    overflow: hidden; /* スクロールバーを隠す */
+  }
+  
+  .home-container .content {
+    width: 85%; /* 白い部分の幅 */
+    height: 95%; /* 白い部分の高さ */
+    background-color: #fafaf8; /* 白い背景 */
+    border-radius: 20px; /* 角を丸く */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 左寄りに配置 */
+    margin-left: 10%; /* 左のマージンを追加 */
+  }
+
+  .material-icons {
+    color: #fff;
+    margin-top: 70px;
+    margin-right: -40px;
+    margin-left: 20px;
+    font-size: 35px; /* 通常時のサイズ */
+    transition: transform 0.3s ease; /* 拡大縮小のアニメーション */
+  }
+  
+  .sidebar-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .material-icons:hover {
+    transform: scale(1.15); /* ホバー時に15%拡大 */
+  }
+  
+  .home-icon {
+    border-left: 2px solid white; /* 左側の境界線を設定 */
+    padding-left: 5px; /* 余白を追加してアイコンと境界線の間を空ける */
+  }
+
+  .analytics-container .analytics {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 75px;
+  }
+  
+  .analytics-container .analytics h1,
+  .analytics-container .analytics h2 {
+    color: #333;
+  }
+  
+  .analytics-container .analytics h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .analytics-container .analytics h2 {
+    margin-left: 20px;
+  }
+  
+  .analytics-container .analytics div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .analytics-container .analytics ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .analytics-container .analytics li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .analytics-container .analytics img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  

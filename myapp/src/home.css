@@ -1,0 +1,304 @@
+
+.home-container, .container {
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 0;
+    height: 98vh; /* 画面全体の高さ */
+    width: 98vw; /* 画面全体の幅 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020; /* 黒い背景 */
+    border-radius: 20px; /* 角を丸く */
+    overflow: hidden; /* スクロールバーを隠す */
+  }
+  
+  .home-container .content {
+    width: 85%; /* 白い部分の幅 */
+    height: 95%; /* 白い部分の高さ */
+    background-color: #fafaf8; /* 白い背景 */
+    border-radius: 20px; /* 角を丸く */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 左寄りに配置 */
+    margin-left: 10%; /* 左のマージンを追加 */
+  }
+
+
+  .home-container .Head {
+    display: flex;
+    height: 5%;
+    width: 100%;
+  }
+  
+  .home-container .upper-content {
+    display: flex;
+    height: 45%;
+    width: 100%;
+    margin-right: 50px
+  }
+  
+  .home-container .left-upper {
+    width: 50%;
+    height: 100%;
+    margin-right: 2%;
+    margin-left: 4%;
+    margin-top: 2%;
+    /* ここで左上コンテンツのスタイルを追加 */
+  }
+  
+  .home-container .right-upper {
+    width: 90%;
+    height: 80%;
+    margin-right: 2%;
+    margin-top: 2%;
+    /* ここで右上コンテンツのスタイルを追加 */
+  }
+  
+  .home-container .lower-content {
+    display: flex;
+    height: 50%;
+    width: 100%;
+  }
+  
+  .home-container .left-lower {
+    width: 60%;
+    height: 100%;
+    margin-right: 2%;
+    margin-left: 4%;
+    margin-top: 2%;
+    /* ここで左下コンテンツのスタイルを追加 */
+  }
+  
+  .home-container .right-lower {
+    width: 40%;
+    height: 100%;
+    margin-right: 2%;
+    margin-top: 2%;
+    /* ここで右下コンテンツのスタイルを追加 */
+  }
+  
+  .Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+  }
+  
+  .Head h1 {
+    margin-left: 50px;
+    margin-top: 70px;
+    font-size: 35px;
+    color: #555;
+  }
+  
+  .Head .user-info {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .Head .user-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-right: -20px;
+    border: 2px solid #ccc;
+    z-index: 2;
+  }
+  
+  .Head p {
+    margin-top: 50px;
+    margin-right: 50px;
+    background-color: #555; /* 薄い水色の背景 */
+    border-radius: 20px; /* 楕円形にする */
+    padding: 10px 40px; /* 内側の余白を調整 */
+    color: #fff; /* 文字色を調整 */
+  }
+  
+/* 新しいクラスを追加して、h2タグを配置 */
+.home-container .right-upper-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  height: 90%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+
+.right-upper {
+  border: 2px solid #ccc;
+  border-radius: 20px; 
+  background-color: #333;
+  padding: 10px;
+  width: 100%; /* ここを100%に変更 */
+  height: calc(100% - 40px); /* h2の高さとマージンを引く */
+  overflow-y: auto;
+}
+
+  .news-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* 各ニュース項目の間の線 */
+  }
+  
+  .news-item a {
+    text-decoration: none; /* アンダーラインを削除 */
+    color: #fff; /* リンクの色 */
+    margin-left: 10px;
+  }
+  
+  .news-item a:hover {
+    text-decoration: underline; /* ホバー時にアンダーラインを表示 */
+  }
+  
+  .coming-icon {
+    width: 400px; /* 画像の幅 */
+    height: auto; /* 高さは自動でアスペクト比を保持 */
+    margin: 10px; /* 画像の周りの余白 */
+    border: 2px solid #ccc; /* 画像の境界線 */
+    border-radius: 5px; /* 角を少し丸く */
+  }
+  
+  .left-lower {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-lower .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; /* ヘッダーセクションとテーブルとの間隔 */
+  }
+  
+  .left-lower h2 {
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 150px; /* h2とボタンの間隔 */
+    font-size: 30px;
+  }
+  
+  
+  .left-lower button {
+    margin-top: 60px;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px; 
+  }
+  
+  .left-lower button:hover {
+    background-color: #555;
+  }
+  
+  .left-lower table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影の追加 */
+  }
+  
+  .left-lower th {
+    background-color: #444; /* ヘッダー背景色 */
+    color: #fff; /* ヘッダー文字色 */
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .left-lower td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease; /* ホバー効果のトランジション */
+  }
+  
+  /* ホバー時のセルの背景色変更 */
+  .left-lower tr:hover td {
+    background-color: #f0f0f0;
+  }
+  
+  .left-lower a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .left-lower a:hover {
+    text-decoration: underline;
+  }
+  
+  .right-lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 他のスタイルもここに追加することができます */
+  }
+  
+  .contact {
+    width: 75%;  /* 画像の幅をコンテナの100%に設定 */
+    height: auto; /* 高さは自動でアスペクト比を保持 */
+    max-width: 100%; /* 最大幅もコンテナの幅に合わせる */
+  }
+  
+  .right-lower {
+    position: relative; /* 親要素を相対位置に設定 */
+  }
+  
+  .right-lower a {
+    position: absolute; /* ボタンを絶対位置に設定 */
+    top: 68%; /* 上から50%の位置に配置 */
+    left: 32%; /* 左から50%の位置に配置 */
+    transform: translate(-50%, -50%); /* 要素自体の中心を基点にする */
+  }
+  
+  .right-lower button {
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .right-lower button:hover {
+    background-color: #ccc;
+  }
+
+  .left-upper h2,
+.right-upper-container h2 {
+  font-size: 30px;
+}
+
+.material-icons {
+  color: #fff;
+  margin-top: 70px;
+  margin-right: -40px;
+  margin-left: 20px;
+  font-size: 35px; /* 通常時のサイズ */
+  transition: transform 0.3s ease; /* 拡大縮小のアニメーション */
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.material-icons:hover {
+  transform: scale(1.15); /* ホバー時に15%拡大 */
+}
+
+.home-icon {
+  border-left: 2px solid white; /* 左側の境界線を設定 */
+  padding-left: 5px; /* 余白を追加してアイコンと境界線の間を空ける */
+}

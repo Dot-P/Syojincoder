@@ -1,0 +1,139 @@
+.material-icons {
+    color: #fff;
+    margin-top: 70px;
+    margin-right: -40px;
+    margin-left: 20px;
+    font-size: 35px;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .material-icons:hover {
+    transform: scale(1.15);
+  }
+  
+  .record-icon {
+    border-left: 2px solid white;
+    padding-left: 5px;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .text-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100px;
+    margin: 20px 0;
+    margin-left: 20px;
+  }
+  
+  .label-abc {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px; /* ラベルとテキストボックスの間の余白 */
+  }
+  
+  .buttons-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+    background-color: rgba(32, 21, 21, 0.1); /* うっすらと白色 */
+}
+
+.button.selected {
+    border: 2px solid transparent;
+    background-color: black; /* 選択されたボタンの背景色 */
+    color: #fff; /* 選択されたボタンのテキスト色 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0); /* シャドウをなくす */
+}
+
+.option-button.selected {
+    border: 2px solid transparent;
+    background-color: black; /* 選択されたオプションボタンの背景色 */
+    color: #fff; /* 選択されたオプションボタンのテキスト色 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0); /* シャドウをなくす */
+}
+
+.ac-button.selected { background-color: #4caf50; } /* ACの選択色 */
+.wa-button.selected, .tle-button.selected, .ce-button.selected, .re-button.selected { background-color: #ff9800; } /* その他の選択色 */
+
+  
+  .send-button {
+    padding: 10px 20px;
+    background-color: #666;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .home-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #202020;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 98%;
+    background-color: #fafaf8;
+    border-radius: 20px;
+  }
+  
+  .sidebar-icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  
+  .content {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-container{
+    border: 2px solid rgb(0, 0, 0); /* 2pxの黒線で囲む */
+    padding-bottom: 30px;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .send-button:hover {
+    background-color: #555; /* ホバー時の背景色 */
+    transform: scale(1.05);  /* ホバー時のサイズ拡大 */
+    transition: 0.3s;       /* トランジション効果 */
+  }
+  
+  .send-button:active {
+    transform: scale(0.95);  /* 押下時のサイズ縮小 */
+    transition: 0.1s;       /* トランジション効果 */
+  }
+  

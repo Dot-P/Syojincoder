@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+  background-image: url('./img/background.jpg'); /* 画像のパスを正しく設定してください */
+  background-size: cover; /* 画像を容器に合わせる */
+  background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
+  height: 100vh; /* 画面全体に広げる */
+  width: 100%;
+  position: relative; /* 子要素の絶対位置を設定する基準にする */
+  font-family: 'Permanent Marker', cursive;
+}
+
+.App a {
+  color: white; /* テキストを白色にする */
+  font-size: 128px; /* フォントサイズを大きくする */
+  text-decoration: none; /* アンダーラインを削除 */
+  position: absolute; /* 親要素に対して絶対位置を設定 */
+  bottom: 150px; /* 下から10pxの位置 */
+  left: 50px; /* 左から10pxの位置 */
+  animation: fadeInUp 2s ease-in-out; /* アニメーションの設定 */
+}
+
+.App h2 {
+  color: white; /* テキストを白色にする */
+  font-size: 32px; /* フォントサイズを大きくする */
+  position: absolute; /* 親要素に対して絶対位置を設定 */
+  bottom: 50px; /* 下から10pxの位置 */
+  left: 70px; /* 左から10pxの位置 */
+  animation: fadeInUp 2s ease-in-out; /* アニメーションの設定 */
+}
+
+.app-container {
+  text-align: center;
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.app-container a {
+  color: white;
+  font-size: 128px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 150px;
+  left: 50px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.app-container h2 {
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  bottom: 50px;
+  left: 70px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+
+/* アニメーションの定義 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
